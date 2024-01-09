@@ -155,7 +155,7 @@ public class Main {
         LibrosEntity llibre = session.get(LibrosEntity.class, id);
 // Actualitzem el títol del llibre
         llibre.setTitol(nouTitol);
-// Confirmem la transacció
+
         session.getTransaction().commit();
     }
 }
